@@ -1,0 +1,10 @@
+#percabangan kembalian
+uang = int(input("Masukkan Uang Pembayaran: Rp "))
+if uang >= total_bayar:
+    kembalian = uang - total_bayar
+    print("Uang Pembayaran: Rp", uang)
+    print("Kembalian:Rp", int(kembalian))
+else:
+    kekurangan = total_bayar - uang
+    print("Uang tidak cukup!")
+    print("Kekurangan: Rp", int(kekurangan))

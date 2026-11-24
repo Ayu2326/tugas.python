@@ -1,0 +1,8 @@
+umur = 26
+
+if umur >= 15:
+    print("Belum Boleh Punya KTP")
+elif umur >= 17:
+    print("Sudah Boleh Punya KTP")
+else:
+    print("Belum boleh punya KTP")

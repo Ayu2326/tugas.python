@@ -1,0 +1,17 @@
+uang_bayar = int(input("\nMasukkan Uang Bayar: Rp "))
+        if uang_bayar >= total_bayar:
+            kembali = uang_bayar - total_bayar
+            break
+        else:
+            print("Uang Anda tidak cukup! Silakan masukkan jumlah yang benar.")
+
+    print("\n==== UANG KEMBALI ===")
+    print("Total Bayar       : Rp", int(total_bayar))
+    print("Uang yang Diterima: Rp", uang_bayar)
+    print("Kembalian         : Rp", int(kembali))
+    
+    # Fitur untuk mendeteksi apakah ingin mengulang program
+    ulang = input("\nApakah ingin menginput barang lagi? (y/n): ").lower()
+    if ulang != 'y':
+        print("\nTerima kasih telah menggunakan program kasir ini!")
+        break

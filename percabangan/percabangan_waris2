@@ -1,0 +1,37 @@
+#Ketentuan
+
+#1. Istri mendapat 1/8 bagian
+#2. Sisa harta setelah bagian istri diberikan kepada anak
+#3. anak laki - laki dapat 2 bagian
+#4. anak perempuan dapat 1 bagian
+#program input jumlah anak laki - laki dan jumlah anak perempuan
+
+print("===Program Pembagian Waris===")
+warisan = int(input("Masukkan Jumlah Warisan : Rp "))
+lk = int(input("Jumlah anak laki - laki : "))
+pr = int(input("Jumlah anak perempuan : "))
+istri = int(input("Jumlah istri : "))
+
+#menghitung jumlah bagian
+bagian_istri = warisan*1/8
+bagian_lk = lk*2
+bagian_pr = pr*1
+sisa_harta = warisan - bagian_istri
+total_bagian = bagian_lk + bagian_pr
+
+#percabangan waris
+if total_bagian > 0:
+    nilai_bagian = sisa_harta / total_bagian
+    
+print("\n=== HASIL PEMBAGIAN")
+if istri > 0:
+    print("Setiap istri mendapat Rp",int(bagian_istri))
+    
+if lk > 0:
+    print("Setiap anak laki - laki mendapat Rp",int(nilai_bagian*2))
+    
+if pr > 0:
+    print("Setiap anak perempuan mendapat Rp",int(nilai_bagian))
+
+else:
+    print("tidak ada ahli waris")
